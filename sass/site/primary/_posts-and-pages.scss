@@ -19,10 +19,39 @@
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	margin: 1em 0 0;
 }
 
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.entry-title {
+	color: rgba(0,0,0,0.5);
+	margin-bottom: 0
+}
+
+.site-title {
+	margin-bottom: 0
+}
+.site-title a{
+	color: rgba(0,0,0,0.5);
+	text-decoration:none;
+	&:hover {
+		text-decoration:underline
+	}
+}
+
+.site {
+	margin: 2em auto;
+}
+
+.site-branding {
+	float: left;
+	padding: 0 2em;
+}
+
+.site-description {
+	margin-top: 0;
 }

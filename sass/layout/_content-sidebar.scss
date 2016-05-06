@@ -1,11 +1,13 @@
 .content-area {
 	float: left;
+	padding: 0 2em;
 	margin: 0 (-$size__site-sidebar) 0 0;
 	width: $size__site-main;
 }
 
 .site-main {
 	margin: 0 $size__site-sidebar 0 0;
+	padding: 0 2em;
 }
 
 .site-content .widget-area {
@@ -14,7 +16,15 @@
 	width: $size__site-sidebar;
 }
 
+.site-header {
+	padding : 0 2em;
+}
+
 .site-footer {
 	clear: both;
 	width: $size__site-main;
+}
+
+.widget_search .search-submit {
+	display: none;
 }
