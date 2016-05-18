@@ -6,12 +6,12 @@
 }
 
 .site-main {
-	margin: 0 $size__site-sidebar 0 0;
 	padding: 0 2em;
 }
 
 .site-content .widget-area {
 	float: right;
+	padding: 0 2em;
 	overflow: hidden;
 	width: $size__site-sidebar;
 }

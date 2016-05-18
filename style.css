@@ -302,9 +302,6 @@ hr {
   height: 1px;
   margin-bottom: 1.5em; }
 
-ul, ol {
-  margin: 0 0 1.5em 3em; }
-
 ul {
   list-style: disc; }
 
@@ -749,24 +746,24 @@ object {
 .content-area {
   float: left;
   padding: 0 2em;
-  margin: 0 -25% 0 0;
-  width: 100%; }
+  margin: 0 -33.3% 0 0;
+  width: 66.6%; }
 
 .site-main {
-  margin: 0 25% 0 0;
   padding: 0 2em; }
 
 .site-content .widget-area {
   float: right;
+  padding: 0 2em;
   overflow: hidden;
-  width: 25%; }
+  width: 33.3%; }
 
 .site-header {
   padding: 0 2em; }
 
 .site-footer {
   clear: both;
-  width: 100%; }
+  width: 66.6%; }
 
 .widget_search .search-submit {
   display: none; }
