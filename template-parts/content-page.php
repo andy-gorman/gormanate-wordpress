@@ -24,6 +24,9 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
+	<div class="entry-meta">
+
+	</div><!-- .entry-meta -->
 
 	<footer class="entry-footer">
 		<?php

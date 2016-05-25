@@ -19,6 +19,9 @@
 			}
 		 ?>
 	</header><!-- .entry-header -->
+	<div class="entry-meta">
+		<?php the_date('Y-m-d', '<a class="entry-date" href="' . esc_url(get_permalink() ) . '">', "</a>") ?>
+	</div>
 
 	<div class="entry-content">
 		<?php

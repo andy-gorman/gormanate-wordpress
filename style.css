@@ -1,9 +1,9 @@
 /*
-Theme Name: _s
+Theme Name: Gormanate
 Theme URI: http://underscores.me/
-Author: Automattic
+Author: Andy Gorman
 Author URI: http://automattic.com/
-Description: Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Description: Hi. I'm a starter theme called <code>Gormanate</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -258,6 +258,11 @@ th {
 	padding: 0;
 }
 
+.site-description {
+	margin-top: 0em;
+	margin-bottom: 0.2em;
+}
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -280,6 +285,10 @@ h4,
 h5,
 h6 {
 	clear: both;
+}
+
+.site-title {
+	margin-bottom: 0em;
 }
 
 p {
@@ -336,6 +345,16 @@ ins {
 
 big {
 	font-size: 125%;
+}
+
+.site-title a,
+.site-title a:visited {
+	color:#666699;
+	text-decoration: none;
+}
+
+.site-title a:hover {
+	text-decoration: underline;
 }
 
 /*--------------------------------------------------------------
@@ -410,6 +429,7 @@ table {
 	margin: 0 0 1.5em;
 	width: 100%;
 }
+
 
 /*--------------------------------------------------------------
 # Forms
@@ -524,18 +544,12 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
-	color: royalblue;
-}
-
-a:visited {
-	color: purple;
-}
-
+a,
+a:visited,
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #080c5e;
 }
 
 a:focus {
@@ -630,7 +644,12 @@ a:active {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 600px) {
+	.site {
+		max-width: 80%;
+		margin: auto;
+	}
+
 	.menu-toggle {
 		display: none;
 	}
@@ -764,6 +783,7 @@ a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -786,14 +806,21 @@ a:active {
 }
 
 .page-content,
-.entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
+}
+
+.entry-content {
+	margin-bottom: 0.5em;
 }
 
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.entry-footer {
+	border-bottom: 1px dotted;
 }
 
 /*--------------------------------------------------------------
@@ -802,6 +829,7 @@ a:active {
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
 	display: none;
+	margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
@@ -839,6 +867,21 @@ a:active {
 	margin-bottom: 0;
 	margin-top: 0;
 	padding: 0;
+}
+.entry-title {
+	margin-bottom: 0;
+}
+
+.entry-title a {
+	text-decoration: none;
+}
+
+.entry-title a:hover {
+	text-decoration: underline;
+}
+
+a.entry-date {
+	color:black;
 }
 
 /* Make sure embeds and iframes fit their containers. */
