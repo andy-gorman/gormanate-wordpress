@@ -289,10 +289,11 @@ h6 {
 
 .site-title {
 	margin-bottom: 0em;
+	margin-top: 0;
 }
 
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: 0.25em;
 }
 
 dfn,
@@ -395,7 +396,8 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 1em 0.25em;
+	padding:0;
 }
 
 ul {
@@ -646,8 +648,8 @@ a:active {
 
 @media screen and (min-width: 600px) {
 	.site {
-		max-width: 80%;
-		margin: auto;
+		max-width: 600px;
+		margin: 30px;
 	}
 
 	.menu-toggle {
