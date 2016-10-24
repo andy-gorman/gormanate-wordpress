@@ -35,9 +35,6 @@
 			<?php
 			endif; ?>
 		</div><!-- .site-branding -->
-		<div class="top-links">
-			<a href="./about/">About</a> | <a href="./projects/">Projects</a> | <a href="./wp-admin/">Admin</a>
-		</div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

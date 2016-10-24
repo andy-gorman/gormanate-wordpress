@@ -12,15 +12,8 @@
 ?>
 
 	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			This is Andy Gorman's page footer
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
 </div><!-- #page -->
-
-<?php wp_footer(); ?>
+<?php wp_footer(); ?> 
 
 </body>
 </html>

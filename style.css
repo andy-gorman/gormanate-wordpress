@@ -288,8 +288,12 @@ h6 {
 }
 
 .site-title {
-	margin-bottom: 0em;
+	font-weight: normal;
+	font-size: 400%;
 	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+	border-bottom: thick dotted black;
 }
 
 p {
@@ -350,12 +354,15 @@ big {
 
 .site-title a,
 .site-title a:visited {
-	color:#666699;
+	color:#000000;
+	margin-top: 0.1em;
+	margin-bottom: 0px;
+	margin-left: 30px;
 	text-decoration: none;
 }
 
 .site-title a:hover {
-	text-decoration: underline;
+	font-style: italic;
 }
 
 /*--------------------------------------------------------------
@@ -363,6 +370,7 @@ big {
 --------------------------------------------------------------*/
 html {
 	box-sizing: border-box;
+	height: 100%;
 }
 
 *,
@@ -373,6 +381,7 @@ html {
 
 body {
 	background: #fff; /* Fallback for when there is no custom background color defined. */
+	height: 100%;
 }
 
 blockquote:before,
@@ -432,6 +441,10 @@ table {
 	width: 100%;
 }
 
+.site-content {
+	min-height: 100%;
+	padding-top: 101px;
+}
 
 /*--------------------------------------------------------------
 # Forms
@@ -648,8 +661,7 @@ a:active {
 
 @media screen and (min-width: 600px) {
 	.site {
-		max-width: 600px;
-		margin: 30px;
+		height: 100%;
 	}
 
 	.menu-toggle {
@@ -782,9 +794,21 @@ a:active {
 	max-width: 100%;
 }
 
+.widget-title {
+	
+}
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+
+.site-header {
+	text-align: center;
+	width: 100%;
+	z-index: 2;
+	background: white;
+	position: fixed;
+}
 
 /*--------------------------------------------------------------
 ## Posts and pages
@@ -794,7 +818,7 @@ a:active {
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0 0 1.5em 1.5em;
 }
 
 .byline,
@@ -822,7 +846,6 @@ a:active {
 }
 
 .entry-footer {
-	border-bottom: 1px dotted;
 }
 
 /*--------------------------------------------------------------

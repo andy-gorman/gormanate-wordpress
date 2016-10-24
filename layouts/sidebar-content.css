@@ -17,6 +17,7 @@
 .site-content .widget-area {
 	float: left;
 	overflow: hidden;
+	border-right: thick dotted black;
 	width: 25%;
 }
 .site-footer {

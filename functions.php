@@ -116,6 +116,9 @@ add_action( 'widgets_init', 'gormanate_widgets_init' );
 function gormanate_scripts() {
 	wp_enqueue_style( 'gormanate-style', get_stylesheet_uri() );
 
+	//Set up sidebar stuff
+	wp_enqueue_style( 'gormanate-sidebar', get_template_directory_uri() . '/layouts/sidebar-content.css');
+
 	wp_enqueue_script( 'gormanate-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'gormanate-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
