@@ -799,6 +799,38 @@ a:active {
 }
 
 /*--------------------------------------------------------------
+# Widget Categories
+--------------------------------------------------------------*/
+
+.widget_categories ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li.cat-item {
+	float: left;
+
+}
+
+ul.children {
+	display: none;
+	position: absolute;
+	background-color: #ffffff;
+}
+
+.children:hover {
+	display: block;
+}
+
+ul.children a {
+	color: black;
+}
+
+
+
+/*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 
