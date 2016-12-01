@@ -127,6 +127,8 @@ function gormanate_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	wp_enqueue_script( 'gormanate-custom_script', get_template_directory_uri() . '/js/custom_script.js', array('jquery', 'jquery-effects-core', 'jquery-effects-slide'), '20151215', true);
 }
 add_action( 'wp_enqueue_scripts', 'gormanate_scripts' );
 

@@ -797,6 +797,19 @@ a:active {
 .widget-title {
 	
 }
+.widget ul {
+	list-style-type: none;
+	font-size: x-large;
+	margin: 0;
+	padding: 0;
+}
+
+.widget ul li a {
+	text-decoration: none;
+	color:#000000;
+	font-family: 'monkey-island' !important;
+	display: block;
+}
 
 /*--------------------------------------------------------------
 # Widget Categories
@@ -804,31 +817,30 @@ a:active {
 
 .widget_categories ul {
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+	position: relative;
+	float: left;
+	width: 100%
 }
 
 li.cat-item {
-	float: left;
-
+	width: 100%;
+	text-decoration: none;
 }
 
-ul.children {
-	display: none;
+.widget_categories ul li ul.children {
 	position: absolute;
 	background-color: #ffffff;
-}
-
-.children:hover {
-	display: block;
+	top: 0;
+	z-index: 999;
+	left: 100%;
+	border: thick solid black;
+	border-left: thick solid rgba(255, 255, 255, 0);
+	background-clip: content-box;
 }
 
 ul.children a {
 	color: black;
 }
-
-
 
 /*--------------------------------------------------------------
 # Content
