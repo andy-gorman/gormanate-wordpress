@@ -854,6 +854,15 @@ ul.children a {
 	position: fixed;
 }
 
+.page-header {
+	text-align: center;
+}
+
+.cat-title {
+	margin: 0;
+	margin-top: 1em;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -862,7 +871,7 @@ ul.children a {
 }
 
 .hentry {
-	margin: 0 0 1.5em 1.5em;
+	margin: 0 0 0 1.5em;
 }
 
 .byline,

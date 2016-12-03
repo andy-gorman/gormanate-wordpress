@@ -16,10 +16,7 @@ get_header(); ?>
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
+				<h2 class='cat-title'><?php single_cat_title(); ?></h1>
 			</header><!-- .page-header -->
 
 			<?php
