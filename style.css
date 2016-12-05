@@ -786,7 +786,7 @@ a:active {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-	margin: 0 0 1.5em;
+	margin: 0; 
 }
 
 /* Make sure select elements fit in widgets. */
@@ -797,6 +797,7 @@ a:active {
 .widget-title {
 	
 }
+
 .widget ul {
 	list-style-type: none;
 	font-size: x-large;
@@ -804,11 +805,25 @@ a:active {
 	padding: 0;
 }
 
+.widget ul li {
+	transition: background-color 0.5s ease;
+	background-color: white;
+}
+
+.widget ul li:hover {
+	background-color: black;
+	color: white;
+}
+
 .widget ul li a {
 	text-decoration: none;
-	color:#000000;
 	font-family: 'monkey-island' !important;
+	color: black;
 	display: block;
+}
+
+.widget ul li:hover a {
+	color: white;
 }
 
 /*--------------------------------------------------------------
@@ -825,6 +840,7 @@ a:active {
 li.cat-item {
 	width: 100%;
 	text-decoration: none;
+	display: inline-block;
 }
 
 .widget_categories ul li ul.children {
@@ -838,8 +854,15 @@ li.cat-item {
 	background-clip: content-box;
 }
 
-ul.children a {
+.widget ul li ul.children li a {
 	color: black;
+	width: 100%;
+	display: block;
+}
+
+.widget ul li ul.children li:hover a {
+	color: white;
+	background-color: black;
 }
 
 /*--------------------------------------------------------------
@@ -868,10 +891,6 @@ ul.children a {
 --------------------------------------------------------------*/
 .sticky {
 	display: block;
-}
-
-.hentry {
-	margin: 0 0 0 1.5em;
 }
 
 .byline,
